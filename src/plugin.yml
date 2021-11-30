@@ -16,3 +16,7 @@ commands:
   farmtime:
     description: Spawn Entitiy
     usage: /<command>
+
+  givewand:
+    description: Get a Special wand
+    usage: /<command>

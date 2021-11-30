@@ -1,5 +1,6 @@
 package com.janakthegamer.jplugin.commands;
 
+import com.janakthegamer.jplugin.items.itemManager;
 import org.bukkit.ChatColor;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.command.Command;
@@ -30,6 +31,10 @@ public class JPluginCommands implements CommandExecutor {
         else if (cmd.getName().equalsIgnoreCase("feed")) {
             player.setFoodLevel(20);
             player.sendMessage("§e§l[!] §eYou Have Been Fed!");
+        }
+
+        else if (cmd.getName().equalsIgnoreCase("givewand")) {
+            player.getInventory().addItem(itemManager.wand);
         }
 
         else if (cmd.getName().equalsIgnoreCase("farmtime")) {
